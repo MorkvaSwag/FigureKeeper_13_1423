@@ -3,5 +3,6 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="FigureKeeper/FigureKeeper.vcxproj" />
+  <Folder Name="/Элементы решения/" />
+  <Project Path="FigureKeeper/FigureKeeper.vcxproj" Id="8baf38aa-4d9a-4949-9cc8-ed6d6e70063f" />
 </Solution>

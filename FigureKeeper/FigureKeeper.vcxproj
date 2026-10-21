@@ -139,7 +139,17 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Exceptions.cpp" />
+    <ClCompile Include="Figure.cpp" />
     <ClCompile Include="FigureKeeper.cpp" />
+    <ClCompile Include="PlaneFigure.cpp" />
+    <ClCompile Include="VolumeFigure.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Exceptions.h" />
+    <ClInclude Include="Figure.h" />
+    <ClInclude Include="PlaneFigure.h" />
+    <ClInclude Include="VolumeFigure.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

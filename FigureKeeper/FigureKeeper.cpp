@@ -2,10 +2,29 @@
 //
 
 #include <iostream>
+#include "PlaneFigure.h"
+#include "VolumeFigure.h"
+#include "Exceptions.h"
+using namespace std;
 
-int main()
-{
-    std::cout << "Hello World!\n";
+int main() {
+    try {
+        double s[3] = { 3, 4, 5 };
+        PlaneFigure t("triangle", s, 3);
+        t.print();
+        t.draw();
+
+        double c[2] = { 2, 5 };
+        VolumeFigure v("cylinder", c, 2);
+        v.print();
+        v.draw();
+
+        PlaneFigure bad("circle", s, 3);   // 3 размера у круга: должна быть ошибка
+    }
+    catch (const FigureException& e) {
+        cout << "Error: " << e.what() << endl;
+    }
+    return 0;
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
